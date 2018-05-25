@@ -15,11 +15,17 @@ public class MaximumFinder {
         double number3= input.nextDouble();
 
         double result=maximum(number1, number2, number3);
-        System.out.print("Maximum is: "+ result);
+
+        //double result1= Math.max(number1, number2);
+
+        System.out.println("Maximum is: "+ result);
+        //System.out.print(number1+ result1);
     }
     //find the maximum value between 3 double numbers
     public static double maximum(double x, double y, double z){
-        double maximumvalue =x;
+      return Math.max(x, Math.max(y,z));
+
+        /*  double maximumvalue =x;
         if(y>maximumvalue){
             maximumvalue = y;
         }
@@ -27,5 +33,7 @@ public class MaximumFinder {
             maximumvalue = z;
         }
         return maximumvalue;
+    */
     }
+
 }
